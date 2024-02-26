@@ -26,7 +26,7 @@ class DemoApp extends StatelessWidget {
         onGenerateRoute: (settings) {
           switch(settings.name){
             case AppRoutes.principal:
-              return MaterialPageRoute(builder: (context) => PrincipalScreen());
+              return MaterialPageRoute(builder: (context) => const PrincipalScreen());
 
             case AppRoutes.screen1:
               return MaterialPageRoute(builder: (context) => const ScreenOne());
@@ -38,7 +38,7 @@ class DemoApp extends StatelessWidget {
               return MaterialPageRoute(builder: (context) => const ScreenThree());
       
             default:
-              return MaterialPageRoute(builder: (context) => PrincipalScreen());
+              return MaterialPageRoute(builder: (context) => const PrincipalScreen());
           }
         },
       
