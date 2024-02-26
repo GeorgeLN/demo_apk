@@ -29,7 +29,6 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
           var h = constraints.maxHeight;
 
           return Scaffold(
-
             body: Stack(
               children: [
                 Container(
@@ -39,24 +38,6 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                 ),
 
                 Lottie.network('https://lottie.host/b3e78be7-53dc-4383-a820-766a2b068769/5HZNZSihb4.json'),
-
-                // Positioned(
-                //   right: 5,
-
-                //   child: ClipPath(
-                //     clipper: TopWaveClipper(),
-                  
-                //     child: Container(
-                //       decoration: const BoxDecoration(
-                //         gradient: LinearGradient(
-                //           colors: orangeGradients,
-                //           begin: Alignment.topLeft,
-                //           end: Alignment.center,
-                //         )
-                //       ),
-                //     ),
-                //   ),
-                // ),
 
                 Positioned(
                   right: w * 0.15,
@@ -83,9 +64,9 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                   child: SwipeableButtonView(
                     activeColor: AppColors.detailColor,
                     buttonWidget: const Icon(Icons.arrow_forward_ios_rounded),
-                    buttonText: 'Vídeo',
+                    buttonText: 'Lorem ⚕️',
                     buttontextstyle: GoogleFonts.montserrat(
-                      fontSize:20,
+                      fontSize: w * 0.025,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),

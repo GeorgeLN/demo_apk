@@ -52,29 +52,8 @@ class _ScreenTwoState extends State<ScreenTwo> with TickerProviderStateMixin {
             alignment: Alignment.bottomCenter,
             children: [
               Positioned(
-                //width: w * 0.5,
-                // height: 50,
-                // top: h * 0.45,
                 bottom: 0,
                 child: GestureDetector(
-                  // onTap: () {
-                  //   const transitionDuration = Duration(milliseconds: 400);
-      
-                  //   Navigator.of(context).push(
-                  //     PageRouteBuilder(
-                  //       transitionDuration: transitionDuration,
-                  //       reverseTransitionDuration: transitionDuration,
-                  //       pageBuilder: (_, animation, ___) {
-                  //         return FadeTransition(
-                  //           opacity: animation,
-                  //           // child: const BiometricsPage(), Uses Lottie
-                  //           //child: const CustomBiometricsPage(),
-                  //         );
-                  //       },
-                  //     ),
-                  //   );
-                  // },
-
                   child: AnimatedBuilder(
                     animation: _controller.buttonController,
                     builder: (_, child) {
@@ -91,7 +70,7 @@ class _ScreenTwoState extends State<ScreenTwo> with TickerProviderStateMixin {
                         margin: EdgeInsets.only(bottom: margin),
 
                         decoration: const BoxDecoration(
-                          color: AppColors.primaryColor,
+                          color: AppColors.detailColor,
                           borderRadius: BorderRadius.all(Radius.circular(16)),
                         ),
                       );
@@ -99,8 +78,6 @@ class _ScreenTwoState extends State<ScreenTwo> with TickerProviderStateMixin {
                   ),
                 ),
               ),
-
-
             ], //Children[] - Stack
           ),
         );

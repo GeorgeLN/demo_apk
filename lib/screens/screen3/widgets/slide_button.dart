@@ -2,6 +2,7 @@
 import 'package:demo_apk_project/designs/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:demo_apk_project/screens/screens.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SlideButton extends StatelessWidget {
   
@@ -31,8 +32,17 @@ class SlideButton extends StatelessWidget {
 
       child: Container(
         decoration: const BoxDecoration(
-          color: AppColors.primaryColor,
+          color: AppColors.detailColor,
           borderRadius: BorderRadius.all(Radius.circular(20))
+        ),
+
+        child: Text(
+          'Soy un botón',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.montserrat(
+            fontSize: 50,
+            color: Colors.black,
+          ),
         ),
       ),
     );

@@ -19,7 +19,7 @@ class _MenuScreenState extends State<VideoPlayerWidget> {
 
   @override
   void initState() {
-    _videoPlayerController = VideoPlayerController.asset('assets/videos/Xelor.mp4');
+    _videoPlayerController = VideoPlayerController.network(widget.videoURL);
     _initializedVideoPlayerFuture = _videoPlayerController.initialize().then(( _ ) {
       _videoPlayerController.play();
       _videoPlayerController.setLooping(true);
