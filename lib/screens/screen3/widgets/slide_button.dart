@@ -40,7 +40,7 @@ class SlideButton extends StatelessWidget {
           'Soy un botón',
           textAlign: TextAlign.center,
           style: GoogleFonts.montserrat(
-            fontSize: 50,
+            fontSize: MediaQuery.of(context).size.width * 0.058,
             color: Colors.black,
           ),
         ),
