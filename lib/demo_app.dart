@@ -38,7 +38,7 @@ class DemoApp extends StatelessWidget {
               return MaterialPageRoute(builder: (context) => const ScreenThree());
       
             default:
-              return MaterialPageRoute(builder: (context) => const PrincipalScreen());
+              return null;
           }
         },
       

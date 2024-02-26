@@ -20,7 +20,7 @@ class CircularMenu extends StatelessWidget {
       children: [
         InkWell(
           onTap: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.screen1);
+            Navigator.pushNamed(context, AppRoutes.screen1);
           },
     
           child: const Icon(Icons.home),
@@ -28,7 +28,7 @@ class CircularMenu extends StatelessWidget {
     
         InkWell(
           onTap: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.screen3);
+            Navigator.pushNamed(context, AppRoutes.screen3);
           },
     
           child: const Icon(Icons.medication),
@@ -36,7 +36,7 @@ class CircularMenu extends StatelessWidget {
 
         InkWell(
           onTap: () {
-            Navigator.pushReplacementNamed(context, AppRoutes.screen1);
+            Navigator.pushNamed(context, AppRoutes.screen1);
           },
     
           child: const Icon(Icons.medical_information),
