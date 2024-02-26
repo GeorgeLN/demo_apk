@@ -11,6 +11,8 @@ import 'package:page_transition/page_transition.dart';
 import 'package:swipeable_button_view/swipeable_button_view.dart';
 
 class PrincipalScreen extends StatefulWidget {
+  const PrincipalScreen({super.key});
+
    
   @override
   State<PrincipalScreen> createState() => _PrincipalScreenState();
